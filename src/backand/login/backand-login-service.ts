@@ -3,7 +3,7 @@ import {Injectable} from "@angular/core";
 import {Observable} from "rxjs/Observable";
 import "rxjs/add/operator/catch";
 import "rxjs/add/observable/throw";
-import {BackendLoginResponse} from "./backand-login-response.model";
+import {BackendLoginResponse} from "./model/backand-login-response.model";
 
 
 @Injectable()

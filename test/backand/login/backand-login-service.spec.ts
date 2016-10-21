@@ -4,7 +4,7 @@ import {TestBed} from "@angular/core/testing";
 import {HttpModule, Http, Response, ResponseOptions, RequestOptionsArgs} from "@angular/http";
 import {BrowserDynamicTestingModule, platformBrowserDynamicTesting} from "@angular/platform-browser-dynamic/testing";
 import {BackandLoginService} from "../../../src/backand/login/backand-login-service";
-import {BackendLoginResponse} from "../../../src/backand/login/backand-login-response.model";
+import {BackendLoginResponse} from "../../../src/backand/login/model/backand-login-response.model";
 
 let mockedHttpService, spyHttpServiceRequestMethod, backandRestServiceUnderTest:BackandLoginService;
 

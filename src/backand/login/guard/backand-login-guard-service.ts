@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {CanActivate} from "@angular/router";
-import {BackandAuthTokenHolderService} from "./backand-login-holder-service.ts";
+import {BackandAuthTokenHolderService} from "../holder/backand-login-holder-service";
 
 @Injectable()
 export class BackendLoginGuardService implements CanActivate {

@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
-import {BackandLoginService} from "./backand-login-service.ts";
-import {BackendLoginResponse} from "./backand-login-response.model";
+import {BackandLoginService} from "../backand-login-service";
+import {BackendLoginResponse} from "../model/backand-login-response.model";
 
 @Injectable()
 export class BackandAuthTokenHolderService {
