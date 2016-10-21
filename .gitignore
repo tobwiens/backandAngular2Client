@@ -1,0 +1,9 @@
+.idea
+/node_modules/
+/dist/
+/npm-debug.log
+/typings/
+/_test-output/
+/test-output/
+/report/
+/coverage/
