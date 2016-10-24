@@ -22,4 +22,7 @@ before_script:
 - npm install -g karma
 - npm install
 
-script: tsc && karma start karma.conf.js --single-run
+script:
+- tsc
+- npm run-script lint
+- karma start karma.conf.js --single-run
