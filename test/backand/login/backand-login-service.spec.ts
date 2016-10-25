@@ -1,6 +1,7 @@
 import {Observable} from "rxjs/Observable";
 import "rxjs/add/observable/of";
 import {TestBed} from "@angular/core/testing";
+import "rxjs/add/observable/of";
 import {HttpModule, Http, Response, ResponseOptions, RequestOptionsArgs} from "@angular/http";
 import {BrowserDynamicTestingModule, platformBrowserDynamicTesting} from "@angular/platform-browser-dynamic/testing";
 import {BackandLoginService} from "../../../src/backand/login/backand-login-service";

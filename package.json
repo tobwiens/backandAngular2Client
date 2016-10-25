@@ -1,6 +1,6 @@
 {
   "name": "backand-angular2-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Backand Angular2 Client",
   "scripts": {
     "typings-install": "typings install",
@@ -13,7 +13,7 @@
     "test": "tsc && karma start karma.conf.js",
     "report": "lite-server -c bs-config.report.json",
     "clean": "rimraf coverage && rimraf report && rimraf dist && rimraf test-output",
-    "cleanNodeModules": "rimraf node_modules/*",
+    "cleanNodeModules": "rimraf node_modules",
     "posttest": "node_modules/.bin/remap-istanbul -i coverage/coverage-final.json -o coverage -t html",
     "coverage": "http-server -c-1 -o -p 9875 ./coverage",
     "lint": "tsconfig-lint .",
