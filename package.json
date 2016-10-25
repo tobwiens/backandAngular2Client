@@ -27,8 +27,6 @@
     "karma-browserify": "5.1.0",
     "ncp": "2.0.0",
     "node-sass": "3.7.0",
-    "phantomjs-polyfill": "0.0.1",
-    "phantomjs-prebuilt": "2.1.4",
     "rimraf": "2.5.1",
     "ts-helper": "0.0.1",
     "ts-node": "0.5.5",

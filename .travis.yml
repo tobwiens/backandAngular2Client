@@ -23,7 +23,8 @@ script:
 - npm run-script lint
 - karma start karma.conf.js --single-run
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+- cp coverage/coverage-final.json coverage-final.json
+- bash <(curl -s https://codecov.io/bash)
 deploy:
   email: tobwiens@users.noreply.github.com
   provider: npm
