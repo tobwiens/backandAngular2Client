@@ -2,27 +2,28 @@ sudo: required
 dist: trusty
 language: node_js
 node_js:
-  - '4.2'
-
+- '4.2'
 addons:
 apt:
   sources:
-    - google-chrome
+  - google-chrome
   packages:
-    - google-chrome-stable
-    - google-chrome-beta
-
+  - google-chrome-stable
+  - google-chrome-beta
 before_install:
-  - export CHROME_BIN=chromium-browser
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-
+- export CHROME_BIN=chromium-browser
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
 before_script:
 - npm install -g angular-cli
 - npm install -g karma
 - npm install
-
 script:
 - tsc
 - npm run-script lint
 - karma start karma.conf.js --single-run
+deploy:
+  email: tobwiens@users.noreply.github.com
+  provider: npm
+  api_key:
+    secure: s/4MsudXV3+nBx5ohd8jMU1KISQsjaFlK9Z+MgHNYR01kwE69Iu/MNC8GJnR9y7fMa6pNkXfNSENZeA0Wv+X3xe9GaozpZ9lIHYERr9ZnO2qgDRirLKYD9OETdU2v6oCaRlS0FBPHQsWpgO6A1Ht1M0x65KCrwFmAgzW6vC6iV2cDWxNQNEEvftsc60rsJUAyjObITun4rcl2F96O35Qm5F0dgRKRw5DEtONTlIAHJ1DE2hIUWQ+/hslUVjCszr7/7G2KWn3L250q9qP1p9DIaj2eqHWuqAN1KriRxBR+aM3/9Zd7Tx/J7vhQUWs6BilCUEote0uZLi6pU1fjsqiCziZqTICv6a3PuTwSd9CMugF37CuDgsvYwv+yMupHj29ZbXxgNBRItM20hTad44FIYBc/HE7pzZ02SuEM+7176H8j5yKbBY2ZZOe1cX+572GtXA3DskNC1t42E24dH9dHfiSRiWUdVx7qfD0E/hcPJcR7PCSWsJm00tKLoJuO+0XBq2kXs+vpkRO3O76mu4/WghlNKGkzUJlnAJZW88l1H7hiJ/lIc1O3WYhx8qjRsbw8WTyxvY+GzlzjOmjp+p/YXSzSrKEEwgn065NKqUCmtWd7KZcKu7TnK/uSF5tkGtTlHsYOv55H83ldtvvzYN/rBbXviyZLDXFqO982nNnW5w=
